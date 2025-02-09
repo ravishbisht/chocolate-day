@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Chocolate Day Surprise</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- fonts end -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="h-screen w-screen relative pt-10 overflow-hidden"
+        style="background: url('/chocolate.jpg') center center / cover no-repeat">
+        <div
+            class="border px-3 backdrop-blur-[3px] absolute inset-0 bg-[#FAE3D9]/50 flex flex-col items-center justify-center">
+            <h2 id="title" class="lobster-two-bold-italic text-4xl text-[#964206] mb-6">My Favorite Flavor? You!</h2>
+            <p id="message" class="montserrat-alternates-black-italic text-[#2f2e2e] text-xl max-w-md text-center">"Life
+                is
+                full of flavors, but nothing compares to the sweetness of being with you. Happy Chocolate Day, my baby!"
+            </p>
+            <button id="cta"
+                class="button mt-8 bg-[#964206] text-[#FAE3D9] py-2 px-4 rounded-full font-bold text-lg transition-all duration-300 hover:bg-[#FAE3D9] hover:text-[#964206]">Celebrate
+                with Love</button>
+        </div>
+        <div id="hearts" class="absolute inset-0 pointer-events-none"></div>
+        <div id="celebration-message"
+            class="absolute top-10 left-1/2 transform -translate-x-1/2 text-4xl text-[#FAE3D9] font-bold">
+            Happy Chocolate Day! 🍫❤️
+        </div>
+        <canvas id="fireworks" class="absolute inset-0 pointer-events-none"></canvas>
+    </div>
+    <div class="text-center montserrat-alternates-black-italic bg-[#964206] text-white">
+        Made with ❤️ <a href="https://www.instagram.com/web________developer/#" class=""> by Ravish</a>
+    </div>
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>

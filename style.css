@@ -1,0 +1,95 @@
+.lobster-two-bold-italic {
+    font-family: "Lobster Two", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .montserrat-alternates-black-italic {
+    font-family: "Montserrat Alternates", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  #title,
+  #message,
+  #cta {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  }
+  
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #964206;
+    transform: rotate(45deg);
+    pointer-events: none;
+    opacity: 0.7;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #964206;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .heart::before {
+    left: -10px;
+  }
+  
+  .heart::after {
+    top: -10px;
+  }
+  
+  #cta {
+    background-color: #964206;
+    color: #fae3d9;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    font-size: 1.125rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #cta:hover {
+    background-color: #fae3d9;
+    color: #964206;
+  }
+  
+  #cta::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+    transform: scale(0);
+    transition: transform 0.3s ease-out;
+  }
+  
+  #cta:hover::before {
+    transform: scale(1);
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #ed4343, 0 0 10px #fae3d9, 0 0 15px #e11010, 0 0 20px #964206, 0 0 35px #964206, 0 0 40px
+        #fc0101, 0 0 50px #f22c2c, 0 0 75px #e21717;
+    }
+    100% {
+      text-shadow: 0 0 10px #fae3d9, 0 0 20px #fae3d9, 0 0 30px #fae3d9, 0 0 40px #ec0b0b, 0 0 70px #964206, 0 0 80px
+        #f40909, 0 0 100px #ef300e, 0 0 150px #fb0202;
+    }
+  }
+  
+  #celebration-message {
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  
